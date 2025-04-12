@@ -338,8 +338,8 @@ namespace PlayerCoder
                     }
                 }
 
-                //Use potion of the ally if they are below 60% health
-                Console.WriteLine("CHECK: ALLY HEALTH < 60%");
+                //Use potion of the ally if they are below or equal to 60% health
+                Console.WriteLine("CHECK: ALLY HEALTH <= 60%");
                 foreach (Hero ally in TeamHeroCoder.BattleState.allyHeroes)
                 {
                     float healthPercent = (float)ally.health / ally.maxHealth;
